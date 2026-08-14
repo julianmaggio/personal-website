@@ -1,7 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './main.scss'
-import { SpeedInsights } from '@vercel/speed-insights/react'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./main.scss";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export function App() {
   return (
@@ -9,16 +9,26 @@ export function App() {
       <h1>Julian Maggio</h1>
 
       <p>
-        Building things for the web. This site is currently under construction, but the engine behind it is already running.
+        Building things for the web. This site is currently under construction,
+        but the engine behind it is already running.
       </p>
 
       <p>
-        If you are an engineer or curious human, you can explore the backend directly via <a href="/api">/api</a>.
+        If you are an engineer or curious human, you can explore the backend
+        directly via <a href="/api">api</a>.
       </p>
+
+      <blockquote>
+        <p>
+          "It always takes longer than you expect, even when you take into
+          account Hofstadter's Law."
+        </p>
+        <cite>Douglas Hofstadter</cite>
+      </blockquote>
 
       <div className="meta">
         <p>
-          Source code hosted on{' '}
+          Source code available on{" "}
           <a
             href="https://github.com/julianmaggio/personal-website"
             target="_blank"
@@ -30,12 +40,12 @@ export function App() {
         </p>
       </div>
     </main>
-  )
+  );
 }
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
     <SpeedInsights />
-  </React.StrictMode>
-)
+  </React.StrictMode>,
+);
